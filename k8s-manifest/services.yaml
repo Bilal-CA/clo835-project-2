@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: timeApp-service
+  name: timeapp-service
 spec:
   type: NodePort
   selector:
-    app: timeApp
+    app: timeapp
   ports:
     - protocol: TCP
       port: 3030
