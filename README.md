@@ -33,12 +33,12 @@ If you don't have minikube install it from this link: https://minikube.sigs.k8s.
 
 If you don't have kubectl install it from this link depending on your operating system: https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
 
-2. **Apply Deployment and Service manifests:**
+3. **Apply Deployment and Service manifests:**
 
     ```sh
     kubectl apply -f deployment.yaml
     kubectl apply -f service.yaml
-3. **Verify deployment:**
+4. **Verify deployment:**
 
     Run the below commands to check if the deployment & service are created successfully:
 
