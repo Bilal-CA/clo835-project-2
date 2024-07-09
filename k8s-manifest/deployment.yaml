@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: timeApp-deployment
+  labels:
+    app: timeApp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: timeApp
+  template:
+    metadata:
+      labels:
+        app: timeApp
+    spec:
+      containers:
+        - name: timeApp
+          image: bilal590/clo835_prj2:v1.0
+          ports:
+            - containerPort: 3030
